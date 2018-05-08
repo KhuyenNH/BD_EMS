@@ -1,0 +1,57 @@
+/*======================================
+        Helper
+======================================*/
+.is_pc {
+    display: inherit;
+}
+.is_sp {
+    display: none;
+}
+.is_hidden {
+    display: none;
+}
+.tar {
+    text-align: right!important;
+}
+.tal {
+    text-align: left!important;
+}
+.tac {
+    text-align: center!important;
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right!important;
+}
+.brd_none {
+    border: 0!important;
+}
+.pl-3p {
+    padding-left: 3%;
+}
+.mt-10 {
+    margin-top: 1rem;
+}
+.mt-20 {
+    margin-top: 2rem;
+}
+.mt-30 {
+    margin-top: 3rem;
+}
+.mt-50 {
+    margin-top: 5rem;
+}
+.mt-80 {
+    margin-top: 8rem;
+}
+.ml--14p {
+    margin-left: -14%;
+}
+.mr--7p {
+    margin-right: -7%;
+}
+.mr--1p {
+    margin-right: -1%;
+}

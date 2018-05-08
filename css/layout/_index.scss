@@ -1,0 +1,183 @@
+/*    main-visual
+---------------------------------------*/
+.main-visual {
+    background: url('../images/bg_main.jpg') no-repeat top center;
+    background-size: cover;
+    height: 120vh;
+    position: relative;
+    text-align: center;
+    .title_h2 {
+        position: absolute;
+        top: calc(50% - 35rem);
+        left: 0;
+        right: 0;
+    }
+    .title_h3 {
+        position: absolute;
+        bottom: 16%;
+        left: 0;
+        right: 0;
+    }
+    .btn {
+        position: absolute;
+        bottom: 4%;
+        left: 0;
+        right: 0;
+    }
+}
+/*    main-visual_02
+---------------------------------------*/
+.main-visual_02 {
+    padding-top: 100px;
+    background: url('../images/bg_02.jpg') no-repeat top center;
+    background-size: cover;
+    height: 90rem;
+    text-align: center;
+    position: relative;
+    .text {
+        padding-top: 4rem;
+        font-size: 3.2rem;
+        color: $color-a;
+        line-height: 1.8;
+        text-align: center;
+    }
+}
+/*    local_01
+---------------------------------------*/
+.local_01 {
+    margin: -10rem -3% 0 -3%;
+    margin-top: -10rem;
+    padding: 10rem 0 8rem;
+    background: url('../images/bg_gray.jpg') no-repeat top center;
+    background-size: cover;
+    .container {
+        position: relative;
+        &:after {
+            content: "";
+            background: url('../images/circle_bg_01.png') no-repeat;
+            background-size: contain;
+            position: absolute;
+            width: 42%;
+            height: 16%;
+            right: 0;
+            bottom: -4%;
+            opacity: 0.5;
+        }
+    }
+    .text {
+        padding-top: 2rem;
+    }
+    .listItems {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+        justify-content: space-between;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            right: 0;
+            transform: rotate(-2.5deg);
+            width: 100%;
+            display: block;
+            border-top: 5px dotted $color-a;
+        }
+        &:nth-child(even) {
+            padding-right: 3%;
+        }
+        &:nth-child(odd) {
+            padding-left: 3%;
+        }
+        // &:last-child {
+        //     &:after {
+        //         content: "";
+        //         position: absolute;
+        //         left: 0;
+        //         right: 0;
+        //         bottom: 0;
+        //         transform: rotate(-2.5deg);
+        //         width: 100%;
+        //         display: block;
+        //         border-bottom: 5px dotted $color-a;
+        //     }
+        // }
+        .items_thumb {
+            position: relative;
+            z-index: 9;
+            width: 40%;
+        }
+        .items_description {
+            padding-top: 2rem;
+            position: relative;
+            z-index: 9;
+            width: 58%;
+        }
+    }
+}
+/*    local_02
+---------------------------------------*/
+.local_02 {
+    .title_h2 {
+        margin-top: 8rem;
+    }
+    .title_h3 {
+        padding: 4rem 0 2.5rem;
+    }
+    .text {
+        max-width: 448px;
+    }
+    .img_banner_01 {
+        margin-top: -29rem;
+        margin-left: -1rem;
+        margin-right: -7rem;
+    }
+}
+/*    local_03
+---------------------------------------*/
+.local_03 {
+    padding-top: 8rem;
+    background: #D71873;
+    // height: 800px;
+    .container {
+        position: relative;
+        &:before {
+            content: "";
+            background: url('../images/circle_bg_02.png') no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            left: -10%;
+            width: 45%;
+            height: 18%;
+            // opacity: 0.5;
+        }
+    }
+    .text {
+        padding: 2rem 0 4rem;
+        text-align: center;
+        color: $color-a;
+    }
+    .img_banner_02 {
+        margin-right: -4.2rem;
+    }
+    .listItems {
+        margin-top: 4rem;
+        justify-content: space-between;
+    }
+    .items_description {
+        width: 55%;
+        .title_h3 {
+            margin-left: -1.5rem;
+        }
+        .text {
+            max-width: 460px;
+        }
+    }
+    .items_thumb {
+        width: 45%;
+    }
+}
+/*    main-visual
+---------------------------------------*/

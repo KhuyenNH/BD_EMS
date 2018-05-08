@@ -1,0 +1,16 @@
+/*======================================
+        Header
+======================================*/
+.header {
+    .logo {
+        width: 65%;
+    }
+    .nav-header {
+        width: 35%;
+        display: flex;
+        justify-content: flex-end;
+        a {
+            margin-left: 2rem;
+        }
+    }
+}
