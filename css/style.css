@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .row_clear:after {
   content: "";
   clear: both;
@@ -62,6 +63,7 @@ html {
 }
 
 body {
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   color: #000;
 }
 
@@ -322,7 +324,7 @@ button:focus, input:focus, a:focus {
 .main-visual {
   background: url("../images/bg_main.jpg") no-repeat top center;
   background-size: cover;
-  height: 120vh;
+  height: 130vh;
   position: relative;
   text-align: center;
 }
@@ -364,7 +366,7 @@ button:focus, input:focus, a:focus {
 
 .main-visual .btn {
   position: absolute;
-  bottom: 4%;
+  bottom: 3.4%;
   left: 0;
   right: 0;
 }
@@ -382,7 +384,7 @@ button:focus, input:focus, a:focus {
   padding-top: 100px;
   background: url("../images/bg_02.jpg") no-repeat top center;
   background-size: cover;
-  height: 90rem;
+  height: 95rem;
   text-align: center;
   position: relative;
 }
@@ -395,6 +397,7 @@ button:focus, input:focus, a:focus {
 }
 
 .main-visual_02 .text {
+  font-weight: bold;
   padding-top: 4rem;
   font-size: 3.1rem;
   color: #ffffff;
@@ -654,6 +657,10 @@ button:focus, input:focus, a:focus {
   height: 22%;
 }
 
+.local_step .listItems img {
+  width: 100%;
+}
+
 .local_step .listItems .items {
   position: relative;
   z-index: 9;
@@ -895,8 +902,8 @@ button:focus, input:focus, a:focus {
   float: right !important;
 }
 
-.brd_none {
-  border: 0 !important;
+.bold {
+  font-weight: bold;
 }
 
 .pl-3p {
@@ -927,6 +934,14 @@ button:focus, input:focus, a:focus {
   margin-top: 8rem;
 }
 
+.ml--4p {
+  margin-left: -4%;
+}
+
+.mr--4p {
+  margin-right: -4%;
+}
+
 .ml--14p {
   margin-left: -14%;
 }
@@ -937,34 +952,6 @@ button:focus, input:focus, a:focus {
 
 .mr--1p {
   margin-right: -1%;
-}
-
-.w-22 {
-  max-width: 22%;
-}
-
-.w-25 {
-  max-width: 25%;
-}
-
-.w-57 {
-  max-width: 57.8%;
-}
-
-.w-62 {
-  max-width: 62%;
-}
-
-.w-66 {
-  max-width: 66%;
-}
-
-.w-75 {
-  max-width: 75%;
-}
-
-.w-94 {
-  max-width: 94%;
 }
 
 /*-----------------------
@@ -980,6 +967,27 @@ button:focus, input:focus, a:focus {
   .container {
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .w-22 {
+    max-width: 22%;
+  }
+  .w-25 {
+    max-width: 25%;
+  }
+  .w-57 {
+    max-width: 57.8%;
+  }
+  .w-62 {
+    max-width: 62%;
+  }
+  .w-66 {
+    max-width: 66%;
+  }
+  .w-75 {
+    max-width: 75%;
+  }
+  .w-94 {
+    max-width: 94%;
   }
   /*------------------- Typography_SP -------------------*/
 }

@@ -25,8 +25,8 @@
 .float_right {
     float: right!important;
 }
-.brd_none {
-    border: 0!important;
+.bold {
+    font-weight: bold;
 }
 .pl-3p {
     padding-left: 3%;
@@ -49,6 +49,12 @@
 .mt-80 {
     margin-top: 8rem;
 }
+.ml--4p {
+    margin-left: -4%;
+}
+.mr--4p {
+    margin-right: -4%;
+}
 .ml--14p {
     margin-left: -14%;
 }
@@ -57,27 +63,4 @@
 }
 .mr--1p {
     margin-right: -1%;
-}
-
-
-.w-22 {
-    max-width: 22%;
-}
-.w-25 {
-    max-width: 25%;
-}
-.w-57 {
-    max-width: 57.8%;
-}
-.w-62 {
-    max-width: 62%;
-}
-.w-66 {
-    max-width: 66%;
-}
-.w-75 {
-    max-width: 75%;
-}
-.w-94 {
-    max-width: 94%;
 }

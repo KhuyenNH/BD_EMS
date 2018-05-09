@@ -3,7 +3,7 @@
 .main-visual {
     background: url('../images/bg_main.jpg') no-repeat top center;
     background-size: cover;
-    height: 120vh;
+    height: 130vh;
     position: relative;
     text-align: center;
     @include mqSm {
@@ -32,7 +32,7 @@
     }
     .btn {
         position: absolute;
-        bottom: 4%;
+        bottom: 3.4%;
         left: 0;
         right: 0;
         @include mqSm {
@@ -47,7 +47,7 @@
     padding-top: 100px;
     background: url('../images/bg_02.jpg') no-repeat top center;
     background-size: cover;
-    height: 90rem;
+    height: 95rem;
     text-align: center;
     position: relative;
     @include mqSm {
@@ -55,6 +55,7 @@
         height: 130vw;
     };
     .text {
+        font-weight: bold;
         padding-top: 4rem;
         font-size: 3.1rem;
         color: $color-a;
@@ -279,6 +280,9 @@
         }
     }
     .listItems {
+        img {
+            width: 100%;
+        }
         .items {
             position: relative;
             z-index: 9;
