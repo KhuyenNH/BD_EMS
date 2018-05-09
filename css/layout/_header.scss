@@ -2,11 +2,17 @@
         Header
 ======================================*/
 .header {
+    padding: 3.8rem 0 1.8rem;
+    .container {
+        // align-items: flex-end;
+    }
     .logo {
-        width: 65%;
+        margin-top: -1.8rem;
+        width: 60%;
     }
     .nav-header {
-        width: 35%;
+        margin-top: 2rem;
+        width: 40%;
         display: flex;
         justify-content: flex-end;
         a {

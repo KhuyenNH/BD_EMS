@@ -25,6 +25,7 @@ $font-body: "Roboto", sans-serif;
 $font-heading: "UTM Alexander", sans-serif;
 $font-awesome: "FontAwesome";
 
+
 // **********************************
 //   COLOR
 // **********************************
@@ -63,4 +64,35 @@ $color-o: #000;
 }
 %duration {
     transition-duration: 400ms;
+}
+
+
+$widthLg: 1280;
+$widthMd: 960;
+$widthSm: 767;
+
+@mixin mqLg {
+  @media only screen and (max-width: $widthLg + px) {
+    @content;
+  }
+}
+@mixin mqMd {
+  @media only screen and (max-width: $widthMd + px) {
+    @content;
+  }
+}
+@mixin mqSm {
+  @media only screen and (max-width: $widthSm + px) {
+    @content;
+  }
+}
+@mixin mqLg-min {
+  @media only screen and (min-width: $widthLg + px) {
+    @content;
+  }
+}
+@mixin mqMd-min {
+  @media only screen and (min-width: $widthMd + px) {
+    @content;
+  }
 }

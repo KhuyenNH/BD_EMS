@@ -11,7 +11,7 @@
     max-width: 970px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 0 3.7%;
 }
 
 .wrap-fl {
@@ -47,9 +47,12 @@
 }
 .text {
     // padding:
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     line-height: 1.6;
     text-align: justify;
+    @include mqSm {
+        font-size: 3.5vw;
+    };
 }
 .title_line {
     width: 110%;
@@ -61,7 +64,7 @@
     padding: 3rem 0 1rem;
     text-align: right;
     position: relative;
-    z-index: 999;
+    z-index: 90;
     margin-bottom: 6rem;
     &:after {
         content: "";
@@ -87,7 +90,7 @@
     padding: 1rem 0 2rem;
     text-align: right;
     position: relative;
-    z-index: 999;
+    z-index: 90;
     margin-bottom: 3rem;
     &:before {
         content: "";
@@ -111,9 +114,14 @@
     background: url("../images/bg_dark.jpg") no-repeat center;
     background-size: cover;
     position: relative;
+    @include mqSm {
+        padding-top: 5vw;
+        padding-bottom: 20vw;
+    };
     &:after {
         content: "";
         background: url('../images/line_bg_pink.png') no-repeat top center;
+        background-size: cover;
         display: block;
         z-index: 9;
         width: 100%;
@@ -131,9 +139,14 @@
     background: url("../images/bg_dark.jpg") no-repeat center;
     background-size: cover;
     position: relative;
+    @include mqSm {
+        padding-top: 15vw;
+        padding-bottom: 24vw;
+    };
     &:after {
         content: "";
         background: url('../images/line_bg.png') no-repeat top center;
+        background-size: cover;
         display: block;
         z-index: 9;
         width: 100%;
@@ -142,6 +155,13 @@
         bottom: 0rem;
         left: 0;
         right: 0;
+        margin-bottom: -1px;
+    }
+    .title_h3 {
+        margin-top: 8rem;
+        @include mqSm {
+            margin-top: 6vw;
+        };
     }
 }
 

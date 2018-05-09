@@ -6,23 +6,39 @@
     height: 120vh;
     position: relative;
     text-align: center;
+    @include mqSm {
+        height: 100vh;
+    };
     .title_h2 {
         position: absolute;
         top: calc(50% - 35rem);
         left: 0;
         right: 0;
+        @include mqSm {
+            top: 30%;
+            padding-left: 5%;
+            padding-right: 5%;
+        };
     }
     .title_h3 {
         position: absolute;
         bottom: 16%;
         left: 0;
         right: 0;
+        @include mqSm {
+            padding-left: 5%;
+            padding-right: 5%;
+        };
     }
     .btn {
         position: absolute;
         bottom: 4%;
         left: 0;
         right: 0;
+        @include mqSm {
+            padding-left: 5%;
+            padding-right: 5%;
+        };
     }
 }
 /*    main-visual_02
@@ -34,12 +50,20 @@
     height: 90rem;
     text-align: center;
     position: relative;
+    @include mqSm {
+        padding-top: 8vw;
+        height: 130vw;
+    };
     .text {
         padding-top: 4rem;
-        font-size: 3.2rem;
+        font-size: 3.1rem;
         color: $color-a;
         line-height: 1.8;
         text-align: center;
+        @include mqSm {
+            padding-top: 5vw;
+            font-size: 4.1vw;
+        };
     }
 }
 /*    local_01
@@ -52,6 +76,22 @@
     background-size: cover;
     .container {
         position: relative;
+        &:before {
+            content: "";
+            background: url('../images/img_man.png') no-repeat;
+            background-size: contain;
+            position: absolute;
+            width: 78%;
+            height: 40%;
+            top: -19.5%;
+            left: -31%;
+            z-index: 99;
+            @include mqSm {
+                left: -48%;
+                top: -77vw;
+                width: 106vw;
+            };
+        }
         &:after {
             content: "";
             background: url('../images/circle_bg_01.png') no-repeat;
@@ -65,6 +105,7 @@
         }
     }
     .text {
+        color: $color-a;
         padding-top: 2rem;
     }
     .listItems {
@@ -105,14 +146,14 @@
         // }
         .items_thumb {
             position: relative;
-            z-index: 9;
-            width: 40%;
+            z-index: 100;
+            width: 45%;
         }
         .items_description {
             padding-top: 2rem;
             position: relative;
             z-index: 9;
-            width: 58%;
+            width: 52%;
         }
     }
 }
@@ -121,53 +162,84 @@
 .local_02 {
     .title_h2 {
         margin-top: 8rem;
+        position: relative;
+        z-index: 999;
+        @include mqSm {
+            margin-top: -10vw;
+        };
     }
     .title_h3 {
         padding: 4rem 0 2.5rem;
+        @include mqSm {
+            padding: 5vw 0 4vw;
+        };
     }
     .text {
+        position: relative;
+        z-index: 99;
         max-width: 448px;
+        @include mqSm {
+            width: 55%;
+        };
     }
     .img_banner_01 {
-        margin-top: -29rem;
+        margin-top: -28rem;
         margin-left: -1rem;
         margin-right: -7rem;
+        @include mqSm {
+            margin-top: -32vw;
+            margin-right: -3.5rem;
+        };
     }
 }
 /*    local_03
 ---------------------------------------*/
 .local_03 {
-    padding-top: 8rem;
-    background: #D71873;
+    padding: 8rem 0 4rem;
+    // background: #D71873;
+    background: url('../images/bg_pink.jpg') no-repeat center top;
+    background-size: cover;
+    @include mqSm {
+        padding-top: 0;
+    };
     // height: 800px;
-    .container {
-        position: relative;
-        &:before {
-            content: "";
-            background: url('../images/circle_bg_02.png') no-repeat;
-            background-size: contain;
-            position: absolute;
-            top: 0;
-            left: -10%;
-            width: 45%;
-            height: 18%;
-            // opacity: 0.5;
-        }
-    }
+    // .container {
+    //     position: relative;
+    //     &:before {
+    //         content: "";
+    //         background: url('../images/circle_bg_02.png') no-repeat;
+    //         background-size: contain;
+    //         position: absolute;
+    //         top: 0;
+    //         left: -10%;
+    //         width: 45%;
+    //         height: 18%;
+    //         // opacity: 0.5;
+    //     }
+    // }
     .text {
         padding: 2rem 0 4rem;
         text-align: center;
         color: $color-a;
+        @include mqSm {
+            padding: 1rem 0 2rem;
+        };
     }
     .img_banner_02 {
         margin-right: -4.2rem;
+        @include mqSm {
+            margin-right: -5.5vw;
+        };
     }
     .listItems {
         margin-top: 4rem;
         justify-content: space-between;
+        @include mqSm {
+            margin-top: 5vw;
+        };
     }
     .items_description {
-        width: 55%;
+        width: 54%;
         .title_h3 {
             margin-left: -1.5rem;
         }
@@ -176,8 +248,141 @@
         }
     }
     .items_thumb {
-        width: 45%;
+        width: 44%;
     }
 }
-/*    main-visual
+/*    local_step
 ---------------------------------------*/
+.local_step {
+    margin-top: -9rem;
+    // background: #D71873;
+    background: url('../images/bg_pink.jpg') no-repeat center top;
+    background-size: cover;
+    padding: 8rem 0 4rem;
+    border-bottom: 2rem solid #910051;
+    @include mqSm {
+        padding: 8rem 0 2rem;
+        border-bottom: 1rem solid #910051;
+    };
+    .container {
+        position: relative;
+        &:after {
+            content: "";
+            background: url('../images/circle_bg_02.png') no-repeat;
+            background-size: contain;
+            position: absolute;
+            bottom: 30%;
+            right: -25%;
+            width: 50%;
+            height: 22%;
+            // opacity: 0.5;
+        }
+    }
+    .listItems {
+        .items {
+            position: relative;
+            z-index: 9;
+            &:not(:last-child) {
+                &:after {
+                    content: "";
+                    padding: 3.5rem 0;
+                    position: relative;
+                    display: block;
+                    margin: auto;
+                    background: url('../images/arrow_step.png') no-repeat center;
+                    text-align: center;
+                    z-index: 99;
+                    width: 85px;
+                    height: 56px;
+                    @include mqSm {
+                        padding: 2rem 0;
+                        width: 12vw;
+                        background-size: contain;
+                    };
+                }
+            }
+        }
+    }
+}
+/*    local_04
+---------------------------------------*/
+.local_04 {
+    padding: 8.5rem 0 7rem;
+    background: url('../images/bg_dark.jpg') no-repeat top center;
+    background-size: cover;
+    @include mqSm {
+        padding: 10vw 0 8vw;
+    };
+    .title_h2 {
+        padding-bottom: 3.8rem;
+        @include mqSm {
+            padding-bottom: 5vw;
+        };
+    }
+}
+/*    local_05
+---------------------------------------*/
+.local_05 {
+    padding: 9rem 0;
+    @include mqSm {
+        padding: 10vw 0;
+    };
+    .img_banner {
+        margin-right: -2rem;
+        @include mqSm {
+            margin-right: -1vw;
+        };
+    }
+    .info {
+        padding: 8rem 0 7rem;
+        @include mqSm {
+            padding: 8vw 0;
+        };
+        .title_h3 {
+            padding-bottom: 3.5rem;
+            @include mqSm {
+                padding-bottom: 4vw;
+            };
+        }
+    }
+    .table {
+        width: 100%;
+        border: 1px solid #260002;
+        tr {
+            // position: relative;
+            // &:after {
+            //     content: "";
+            //     position: relative;
+            //     width: 80%;
+            //     background: #260002;
+            //     height: 1px;
+            //     display: block;
+            // }
+            td {
+                border-bottom: 1px solid #260002;
+                color: #260002;
+                font-size: 2.8rem;
+                padding: 2rem;
+                line-height: 1.5;
+                @include mqSm {
+                    font-size: 3.5vw;
+                    padding: 4vw 3vw;
+                };
+                &:nth-child(odd) {
+                    font-weight: bold;
+                    width: 25%;
+                    background: #C5B8B8;
+                    @include mqSm {
+                        width: 35%;
+                    };
+                }
+                &:nth-child(even) {
+                    width: 75%;
+                    @include mqSm {
+                        width: 65%;
+                    };
+                }
+            }
+        }
+    }
+}
