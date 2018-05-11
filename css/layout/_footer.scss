@@ -5,9 +5,9 @@
     background: #140000;
     color: #fff;
     padding: 4.5rem 0 10rem;
-    @include mqSm {
-        padding: 8vw 0 12vw;
-    };
+    // @include mqSm {
+    //     padding: 8vw 0 12vw;
+    // };
     .nav-footer {
         font-size: 1.1rem;
         padding-bottom: 10rem;
@@ -16,37 +16,37 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        @include mqSm {
-            font-size: 2.5vw;
-            margin: auto;
-            padding-bottom: 0;
-            a {
-                display: block;
-                padding: 2vw 0;
-            }
-        };
+        // @include mqSm {
+        //     font-size: 2.5vw;
+        //     margin: auto;
+        //     padding-bottom: 0;
+        //     a {
+        //         display: block;
+        //         padding: 2vw 0;
+        //     }
+        // };
         li {
             margin-bottom: 1.5rem;
         }
-        @include mqSm {
-            ul {
-                width: 50%;
-            }
-        };
+        // @include mqSm {
+        //     ul {
+        //         width: 50%;
+        //     }
+        // };
     }
     .copyright {
         font-size: 0.9rem;
         text-align: center;
     }
     .logo_footer {
-        @include mqSm {
-            padding-top: 5vw;
-            width: 100%!important;
-            a {
-                display: block;
-                text-align: center;
-            }
-        };
+        // @include mqSm {
+        //     padding-top: 5vw;
+        //     width: 100%!important;
+        //     a {
+        //         display: block;
+        //         text-align: center;
+        //     }
+        // };
     }
     .logo_footer_li {
         margin-top: -1.5rem;

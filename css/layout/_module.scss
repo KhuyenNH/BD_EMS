@@ -1,6 +1,7 @@
 /*------------------- Wraper -------------------*/
 .wrapper {
     overflow: hidden;
+    // width: 970px;
     // ...
 }
 .row_clear {
@@ -8,10 +9,10 @@
 }
 .container {
     // @extend %clearfix;
-    max-width: 970px;
-    width: 100%;
+    width: 970px;
+    // width: 100%;
     margin: 0 auto;
-    padding: 0 3.7%;
+    padding: 0 52px;
 }
 
 .wrap-fl {
@@ -50,16 +51,16 @@
     font-size: 2.6rem;
     line-height: 1.6;
     text-align: justify;
-    @include mqSm {
-        font-size: 3.5vw;
-    };
+    // @include mqSm {
+    //     font-size: 3.5vw;
+    // };
 }
 .title_line {
     width: 110%;
-    margin-top: -4rem;
+    margin-top: -6rem;
     margin-left: -5%;
     margin-right: -5%;
-    transform: rotate(-2deg);
+    transform: rotate(-3.5deg);
     background: $color-a;
     padding: 3rem 0 1rem;
     text-align: right;
@@ -82,10 +83,10 @@
 }
 .title_line-top {
     width: 110%;
-    margin-top: -4rem;
+    margin-top: -6rem;
     margin-left: -5%;
     margin-right: -5%;
-    transform: rotate(-2deg);
+    transform: rotate(-3.5deg);
     background: $color-a;
     padding: 1rem 0 2rem;
     text-align: right;
@@ -107,6 +108,8 @@
     }
 }
 .title_dark_02 {
+    // border-left: 2px solid #910051;
+    // border-right: 2px solid #910051;
     border-top: 1rem solid #C7BFC3;
     padding-top: 6.5rem;
     padding-bottom: 7rem;
@@ -114,14 +117,14 @@
     background: url("../images/bg_dark.jpg") no-repeat center;
     background-size: cover;
     position: relative;
-    @include mqSm {
-        padding-top: 5vw;
-        padding-bottom: 20vw;
-    };
+    // @include mqSm {
+    //     padding-top: 5vw;
+    //     padding-bottom: 20vw;
+    // };
     &:after {
         content: "";
         background: url('../images/line_bg_pink.png') no-repeat top center;
-        background-size: cover;
+        // background-size: cover;
         display: block;
         z-index: 9;
         width: 100%;
@@ -133,23 +136,25 @@
     }
 }
 .title_dark {
-    padding-top: 13rem;
+    padding-top: 15rem;
     padding-bottom: 7rem;
-    margin-top: -6rem;
+    margin-top: -9rem;
     background: url("../images/bg_dark.jpg") no-repeat center;
     background-size: cover;
     position: relative;
-    @include mqSm {
-        padding-top: 15vw;
-        padding-bottom: 24vw;
-    };
+    // @include mqSm {
+    //     padding-top: 15vw;
+    //     padding-bottom: 24vw;
+    // };
     &:after {
         content: "";
         background: url('../images/line_bg.png') no-repeat top center;
-        background-size: cover;
+        // background-size: cover;
         display: block;
         z-index: 9;
+        max-width: 1890px;
         width: 100%;
+        margin: auto;
         height: 10rem;
         position: absolute;
         bottom: 0rem;
@@ -159,9 +164,9 @@
     }
     .title_h3 {
         margin-top: 8rem;
-        @include mqSm {
-            margin-top: 6vw;
-        };
+        // @include mqSm {
+        //     margin-top: 6vw;
+        // };
     }
 }
 
